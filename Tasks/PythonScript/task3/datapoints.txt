@@ -1,0 +1,26 @@
+For header:
+/html/body/main/div[3]/div[3]/table/tbody/tr[1]/th[1]
+/html/body/main/div[3]/div[3]/table/tbody/tr[1]/th[2]
+
+/html/body/main/div[3]/div[3]/table/tbody/tr[1]/th[18]
+
+For values:
+/html/body/main/div[3]/div[3]/table/tbody/tr[2]/td[3]/a
+/html/body/main/div[3]/div[3]/table/tbody/tr[2]/td[4]
+
+/html/body/main/div[3]/div[3]/table/tbody/tr[2]/td[19]
+
+/html/body/main/div[3]/div[3]/table/tbody/tr[3]/td[3]
+/html/body/main/div[3]/div[3]/table/tbody/tr[3]/td[4]
+
+/html/body/main/div[3]/div[3]/table/tbody/tr[2]
+/html/body/main/div[3]/div[3]/table/tbody/tr[3]
+
+/html/body/main/div[3]/div[3]/table/tbody/tr[2]/td[3]   --- 1col
+/html/body/main/div[3]/div[3]/table/tbody/tr[2]/td[4]   --- 2col
+/html/body/main/div[3]/div[3]/table/tbody/tr[2]/td[5]   --- 3col
+
+
+Update for Task3: Webscrapping (9/4/25)
+1. Given problem statement, use cases & tech stack.
+2. Fetching data from the tables

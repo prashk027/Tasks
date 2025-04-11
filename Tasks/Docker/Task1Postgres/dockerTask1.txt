@@ -1,0 +1,39 @@
+How to connect to postgresql using docker?
+Docker Hub(command):
+> docker run --name postgres-server -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+If you have postgres image on ur system:
+> docker start postgres-server
+
+To check status of container shows list of all the images which are running:
+> docker ps 
+
+To stop docker:
+> docker stop some-postgres
+
+To connect to docker psql terminal:
+> docker exec -it postgres-server psql -U postgres
+
+postgres to show table:
+> \dt
+
+> create table Students(id int not null primary key,
+name varchar(20),
+roll_no int);
+
+CREATE TABLE items (
+    itm_id SERIAL PRIMARY KEY,
+    prod_name varchar(20) not null,
+    price int not null
+);
+
+>\dt
+
+> insert into items(prod_name, price)
+values ('Toor Dal',50),('Basmati Rice',101),('Soap',500),('Shampoo',366);
+
+To remove docker container:
+> docker rm -f "some-postgres" docker_container_name
+
+To remove docker image:
+> docker rmi "postgres" docker_image
