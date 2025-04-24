@@ -1,6 +1,3 @@
-'''
-    Need to work on the bug why the first 50 companies are not getting added
-'''
 import psycopg2
 import pandas as pd
 from selenium.webdriver.common.by import By
@@ -8,13 +5,9 @@ from selenium.webdriver.common.keys import Keys # to use enter
 import login_screener 
 import time
 from extract_excel import data_50
-# import extract_watchlist 
-# import delete_companies 
-# import insert_postgres 
 
-# data = pd.read_csv('Screener\excel\Companies List for Screener Watchlist(Sheet1).csv')
 data = {}
-# driver = login_screener.credit()[0]
+
 driver = login_screener.login()
 
 def delete_comp():
@@ -74,8 +67,6 @@ def insertion_to_psql():
         row_data = []
         li =[]
 
-        # print(cols)
-
         for row in range(len(rows)):
             for col in range(len(rows[row])):
                 for r in range(len(rows)):
@@ -109,9 +100,8 @@ def insertion_to_psql():
 
 try:
     driver.find_element(By.XPATH,"/html/body/div/div[2]/main/div[1]/div[2]/a[2]").click()
-    # delete_comp()
-
-   
+    delete_comp()
+       
     for el in data_50:
         driver.find_element(By.XPATH,"/html/body/main/div[2]/div[1]/div[2]/a[2]").click()
         input = driver.find_element(By.XPATH,"/html/body/main/div[3]/form/div/textarea")
@@ -124,7 +114,6 @@ try:
         extract_watch()
         insertion_to_psql()
         delete_comp()
-
 
     print("Added from Excel")
 except Exception as e:

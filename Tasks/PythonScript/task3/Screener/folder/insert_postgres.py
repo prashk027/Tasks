@@ -1,5 +1,5 @@
 import psycopg2
-import extract_watchlist 
+import Screener.folder.extract_watchlist as extract_watchlist 
 
 conn = None
 cur = None
