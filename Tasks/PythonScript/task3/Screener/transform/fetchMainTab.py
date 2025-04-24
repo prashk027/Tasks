@@ -5,7 +5,7 @@ import pandas as pd
 conn = None
 cur = None
 
-def createDerivedTab():
+def create_derived_table():
     try:
         conn = psycopg2.connect(host='localhost', dbname='postgres',user='postgres',password="mypass",port=5431)
         cur = conn.cursor()
@@ -35,10 +35,8 @@ def createDerivedTab():
     finally:
         if cur is not None:
             cur.close()
-        if conn is not None:
-            conn.close()
 
-def insertDerivedTab(df):
+def insert_derived_table(df):
     try:
         conn = psycopg2.connect(host='localhost', dbname='postgres',user='postgres',password="mypass",port=5431)
         cur = conn.cursor()
@@ -60,10 +58,8 @@ def insertDerivedTab(df):
     finally:
         if cur is not None:
             cur.close()
-        if conn is not None:
-            conn.close()
 
-def getMainTab():
+def get_main_table():
     try:
         conn = psycopg2.connect(host='localhost', dbname='postgres', user='postgres', password='mypass', port=5431)
         cur = conn.cursor()
@@ -74,7 +70,7 @@ def getMainTab():
         for i in cur.fetchall():
             li.append(i)
 
-        cur.execute(f"""
+        cur.execute("""
             select column_name, data_type
             from information_schema.columns
             where table_schema='public'
@@ -92,12 +88,9 @@ def getMainTab():
     finally:
         if cur is not None:
             cur.close()
-        if conn is not None:
-            conn.close()
-    
 
-
-li,col = getMainTab()
+# main code
+li,col = get_main_table()
 df = pd.DataFrame(li,columns=col)
 
 for col in df.columns:
@@ -121,55 +114,5 @@ df['is_under_value'] = ((df['roe_percent']>15) &
 df['is_high_undervalued'] = ((df['is_under_value'] == True) & (df['is_high_quality'] == True))
 
 
-# createDerivedTab()
-insertDerivedTab(df)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def high_quality(df):
-#     df['is_high_quality'] = ((df['roe_percent']>15) & 
-#         (df['roce_percent']>15) &
-#         (df['eps_12m_rs']>10) &
-#         (df['ev_by_ebitda']>10) &
-#         (df['div_yld_percent']>1) &
-#         (df['rsi']<70) &
-#         (df['mar_cap_rscr']>1000))
-    
-#     return df
-
-# def under_valued(df):
-#     df['is_under_value'] = ((df['roe_percent']>15) &
-#         (df['debt_by_eq']<0.5) &
-#         (df['current_ratio']>2))
-
-#     return df
-
-# def high_undervalued(df):
-#     df['is_high_undervalued'] = ((df['is_under_value'] == True) & (df['is_high_quality'] == True))
-#     return df
+# create_derived_table()
+insert_derived_table(df)

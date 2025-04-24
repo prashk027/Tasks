@@ -18,13 +18,13 @@ def delete_each_comp():
     ul = driver.find_elements(By.XPATH,"/html/body/main/div[2]/div[2]/ul/li")
 
     total_comp = len(ul)
-    isNotZero = True
+    is_not_zero = True
 
-    while isNotZero:
+    while is_not_zero:
         if total_comp == 0:
-            isNotZero = False
+            is_not_zero = False
         else:
-            for i in range(total_comp):
+            for _ in range(total_comp):
                 time.sleep(2)
                 driver.find_element(By.XPATH,"/html/body/main/div[2]/div[2]/ul/li[1]/button/i").click()
                 time.sleep(1)
@@ -49,7 +49,7 @@ def extract_watch():
     time.sleep(1)
     print("Your data is Scrap from Screener.in")
 
-def insertion_to_psql():
+def insert_to_psql() -> None:
     try:
         conn = psycopg2.connect(host='localhost', dbname='postgres',user='postgres',password="mypass",port=5431)
         cur = conn.cursor()
@@ -94,10 +94,8 @@ def insertion_to_psql():
     finally:
         if cur is not None:
             cur.close()
-        if conn is not None:
-            conn.close()
 
-
+# Main code
 try:
     driver.find_element(By.XPATH,"/html/body/div/div[2]/main/div[1]/div[2]/a[2]").click()
     delete_comp()
@@ -112,7 +110,7 @@ try:
         time.sleep(3)
         driver.find_element(By.XPATH,"/html/body/main/div[2]/form/button").click()
         extract_watch()
-        insertion_to_psql()
+        insert_to_psql()
         delete_comp()
 
     print("Added from Excel")
