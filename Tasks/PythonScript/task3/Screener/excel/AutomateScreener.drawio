@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.14">
+  <diagram name="Page-1" id="uotjWBlcmdlJuuX1ALOv">
+    <mxGraphModel dx="819" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="380" width="550" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-15" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/fast-website-load-speed-128.png" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-16" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="331" y="550" width="48" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-17" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.storage;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="430" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-18" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="630" y="560" width="48" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-21" value="&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;List of Companies&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;&amp;nbsp;in Excel&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="623" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="kGMsECMsdV0A2mrFXDQv-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="570" as="sourcePoint" />
+            <mxPoint x="460" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-23" value="&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;Extract Companies from Screener with columns&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="430" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kGMsECMsdV0A2mrFXDQv-15" target="kGMsECMsdV0A2mrFXDQv-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="580" as="sourcePoint" />
+            <mxPoint x="250" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-25" value="&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;Save the Extracted data&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="623" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.372;entryY=1.047;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kGMsECMsdV0A2mrFXDQv-16" target="kGMsECMsdV0A2mrFXDQv-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="600" as="sourcePoint" />
+            <mxPoint x="540" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-28" value="&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;Transform the table according to Business Logic&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="440" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.056;entryY=0.19;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.784;exitY=1.047;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="kGMsECMsdV0A2mrFXDQv-17" target="kGMsECMsdV0A2mrFXDQv-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="550" as="sourcePoint" />
+            <mxPoint x="540" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-30" value="&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;Load transformed table&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="505" y="577" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.055;exitY=0.53;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="kGMsECMsdV0A2mrFXDQv-18" target="kGMsECMsdV0A2mrFXDQv-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="630" as="sourcePoint" />
+            <mxPoint x="654" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-32" value="&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;Data Analysis&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="642" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-33" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/linance/48/15_Chart-128.png" vertex="1" parent="1">
+          <mxGeometry x="760" y="530" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-34" value="ETL Pipeline" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="680" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kGMsECMsdV0A2mrFXDQv-35" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.table;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="548" width="67.5" height="66" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
